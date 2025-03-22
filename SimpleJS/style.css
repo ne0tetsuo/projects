@@ -1,0 +1,19 @@
+body{
+    height:10vw;
+    background-color:rgba(59, 29, 59, 0.914);
+    margin:0;
+    overflow:hidden;
+}
+.image{
+    width:clamp(10vmin,200px,50vmin);
+    height:clamp(12vmin,300px,60vmin);
+    object-fit: cover;
+    position:absolute;
+    transform:translate(-50%,-50%);
+}
+.image[data-status="inactive"]{
+    display:none;
+}
+.image[data-status="active"]{
+    display:block;
+}
